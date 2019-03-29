@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>财政绩效一体化服务平台</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <link rel="stylesheet" type="text/css" href="css/public.css"/>
+</head>
+
+<body>
+<div class="body">
+  <div class="tab">
+    <a class="tab-arrow" href="javascript:;">
+      <img src="./img/arrow.png" alt="">
+    </a>
+    <ul class="tab-ul">
+      <li data-num="1"><a href="./index.html" target="_self">1</a></li>
+      <li data-num="2" class="active">2</li>
+    </ul>
+  </div>
+  		
+	<div class="selectwrap" style="display:none">
+		<select id="year">
+			<option value=2016>2016年</option>
+			<option value=2017>2017年</option>
+			<option value=2018>2018年</option>
+			<option value=2019 selected="selected">2019年</option>
+		</select>
+	</div>
+	
+  <div class="czjx">
+    <div class="bg">
+      <div class="earth">
+      </div>
+
+      <div class="satelite">
+        <img src="img/satellite.png">
+      </div>
+
+      <div class="night">
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+      </div>
+
+      <div class="left">
+        <div class="headline">
+          <h2>财政绩效一体化服务平台</h2>
+          <span class="anim-slide"></span>
+        </div>
+        <div class="legend">
+          <h3>各部门考核结果得分对比</h3>
+          <ul>
+            <li><a href="#"></a><span>事业投入类</span></li>
+            <li><a href="#"></a><span>产出与结果</span></li>
+            <li><a href="#"></a><span>能力类</span></li>
+            <li><a href="#"></a><span>社会评价类</span></li>
+            <li><a href="#"></a><span>加减分项</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="score_board">
+        <div id="progress_bar"></div>
+
+        <table id="t_score">
+          <thead>
+          <tr>
+            <th></th>
+            <th style="text-align: right"></th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>事业投入类：</td>
+            <td style="text-align: right"></td>
+          </tr>
+          <tr>
+            <td>产出与结果：</td>
+            <td style="text-align: right"></td>
+          </tr>
+          <tr>
+            <td>能力类：</td>
+            <td style="text-align: right"></td>
+          </tr>
+          <tr>
+            <td>社会评价类：</td>
+            <td style="text-align: right"></td>
+          </tr>
+          <tr>
+            <td>加减分项：</td>
+            <td style="text-align: right"></td>
+          </tr>
+          </tbody>
+          <tfoot>
+        </table>
+
+      </div>
+
+      <div class="tray">
+        <div class="ring">
+          <div class="course"></div>
+        </div>
+
+        <div class="ring">
+          <div class="course"></div>
+        </div>
+
+        <div class="ring">
+          <div class="course"></div>
+        </div>
+
+        <div class="ring">
+          <div class="course"></div>
+        </div>
+
+        <div class="ring">
+          <div class="course"></div>
+        </div>
+
+        <div class="ring">
+          <div class="course"></div>
+        </div>
+
+        <div class="ring">
+          <div class="course"></div>
+        </div>
+
+        <div class="ring">
+          <div class="course"></div>
+        </div>
+
+        <div class="ring">
+          <div class="course"></div>
+        </div>
+
+        <div class="ring">
+          <div class="course"></div>
+        </div>
+      </div>
+
+    </div>
+    <div>
+      <!--背景层 绝对布局 z-index=-1 -->
+      <img id="img1" src="img/shadow.png" width="100" height="100"/></img>
+      <!--canvas对象其行为由脚本控制 绝对布局 z-index=0 -->
+      <canvas id="myCanvas" width="1920" height="1080"></canvas>
+      <!--前景层 绝对布局 z-index=1 -->
+      <img id="img2" src="img/back.png" width="100" height="100"></img>
+      <img id="img3" src="img/xtp.png" width="100" height="100"></img>
+      <img id="img4" src="img/dtp.png" width="100" height="100"></img>
+      <script src="js/Stack.js" type="text/javascript" charset="utf-8"></script>
+    </div>
+  </div>
+</div>
+</body>
+<script src="js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/echarts.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+</html>
